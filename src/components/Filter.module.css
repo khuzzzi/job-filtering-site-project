@@ -1,0 +1,92 @@
+.container {
+    width: 80vw;
+    height: 10vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row; /* Add this line */
+    margin-left: 10vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 2vh;
+    align-items: center;
+}
+
+.inside {
+    height: 4vh;
+    width: 10vw;
+    background-color: #eef6f3;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cross {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    color: white;
+}
+
+.btncross {
+    padding: 0;
+    padding: 2vh 1vw;
+    background-color: #57a1a1;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.btncross:hover {
+    background-color: #2a3939;
+}
+
+.para {
+    margin-right: 2vw;
+    color: #5da5a4;
+    font-weight: bolder;
+    font-size: 1.2vw;
+}
+
+.btn {
+    margin-left: 23vw;
+    border-radius: 5px;
+    color: #57a1a1;
+    font-family: "League Spartan";
+    font-size: 1.2vw;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-bottom: 2px solid #57a1a1;
+    border-radius: 0px;
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        flex-direction: column; /* Change to column on smaller screens */
+        height: auto; /* Adjust height to fit content */
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+        
+    }
+    .para {
+        margin-right: 9vw;
+        color: #5da5a4;
+        font-weight: bolder;
+        font-size: 5.2vw;
+    }
+    .inside {
+        width: 39vw;
+        margin-top: 2vh;
+    }
+    .btn {
+        font-size: 4.2vw;
+        margin-left: 0; /* Center button in column layout */
+        margin-top: 2vh; /* Add some spacing on top */
+    }
+}
